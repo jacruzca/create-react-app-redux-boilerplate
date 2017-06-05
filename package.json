@@ -12,11 +12,12 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.7",
+    "workbox-cli": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && workbox-cli generate:sw",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
